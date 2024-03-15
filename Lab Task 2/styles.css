@@ -1,4 +1,19 @@
 /* Add Review Page Styles */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --p-font: 1rem;
+    --btn-bg-color: #007bff;
+    --btn-hover-color: #0056b3;
+}
+
+.logo {
+    font-size: 33px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
 .add-review {
     padding: 50px 20px;
     max-width: 600px;
@@ -17,15 +32,15 @@
 .form-control {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: var(--p-font);
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 .btn {
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
+    font-size: var(--p-font);
+    background-color: var(--btn-bg-color);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -34,7 +49,7 @@
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: var(--btn-hover-color);
 }
 
 /* Reviews Page Styles */
