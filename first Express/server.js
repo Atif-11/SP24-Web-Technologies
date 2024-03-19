@@ -8,4 +8,13 @@ server.get("/", function(req,res){
 server.get("/assignment-1",function(req,res){
     res.render("cv.ejs");
 })
+server.get("/assignment-2",function(req,res){
+    res.render("formValidation.ejs");
+})
+server.get("/Lab-Task-1",function(req,res){
+    res.render("landingPage.ejs");
+})
+server.get("/Lab-Task-2",function(req,res){
+    res.render("APIs.ejs");
+})
 server.listen(3000);
