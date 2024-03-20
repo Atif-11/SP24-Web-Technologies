@@ -6,15 +6,15 @@ server.get("/", function(req,res){
     res.render("homepage");
 }) 
 server.get("/assignment-1",function(req,res){
-    res.render("cv.ejs");
+    res.render("cv");
 })
 server.get("/assignment-2",function(req,res){
-    res.render("formValidation.ejs");
+    res.render("formValidation");
 })
 server.get("/Lab-Task-1",function(req,res){
-    res.render("landingPage.ejs");
+    res.render("landingPage");
 })
 server.get("/Lab-Task-2",function(req,res){
-    res.render("APIs.ejs");
+    res.render("APIs");
 })
 server.listen(3000);
