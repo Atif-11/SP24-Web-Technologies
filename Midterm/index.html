@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Mercury | Latest Hobart and</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEvKyYCY3XoO9s_V59PlRzHV_1S_toEAuPg&usqp=CAU" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        // Function to show the image name
+        function showName(image) {
+            document.getElementById("image-name").textContent = image.alt;
+        }
+
+        // Function to hide the image name
+        function hideName() {
+            document.getElementById("image-name").textContent = "";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="container container-nav">
+                <ul>
+                    <li><a href="New's Paper">Read Today's Paper |</a></li>
+                    <li><a href="Tributes">Tributes</a></li>
+                    <li class="date"><a href="Date">12:22pm Monday, April 1st, 2024</a></li>
+                    <li><a href="here">We're for you</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-body-content">
+            <div class="bottom-nav">
+                <ul>
+                    <li class="underline"><a href="hobart">Hobart</a></li>
+                    <li>Today</li>
+                    <li><img src="weather-icon.png" /></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div id="logo">
+        <img id="logo-img" src="mercury main logo.png" alt="Logo" />
+    </div>
+
+    <!-- Placeholder for the image name -->
+    <div id="image-name"></div>
+
+    <div class="images">
+        <!-- Image with hover effect -->
+        <img
+            src="img1.png"
+            alt="img3.png"
+            onmouseover="showName(this)"
+            onmouseout="hideName()"
+        />
+        <img
+            src="img2.png"
+            alt="img2.png"
+            onmouseover="showName(this)"
+            onmouseout="hideName()"
+        />
+    </div>
+</body>
+</html>
