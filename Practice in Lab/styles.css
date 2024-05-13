@@ -1,0 +1,36 @@
+/* Question 1: Form styling */
+
+/* Centralize the form and set its width */
+form {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for each form row */
+form div {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: lightgray;
+    margin-bottom: 20px; /* Space between rows */
+}
+
+/* Label styling */
+label {
+    flex: 0 0 30%; /* Takes up 30% of the div */
+    margin-right: 10px; /* Space between label and input */
+}
+
+/* Text input fields padding */
+input[type="text"] {
+    flex: 1; /* Takes remaining space */
+    padding: 5px 10px; /* Vertical and horizontal padding */
+}
+
+/* Radio buttons and checkboxes are inside a div */
+form div div {
+    flex: 1; /* Takes remaining space */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between radio buttons/checkboxes */
+}
